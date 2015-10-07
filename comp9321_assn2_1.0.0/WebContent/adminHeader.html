@@ -1,0 +1,38 @@
+<link href="css/responsive-menu.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<script src="js/modernizr.min.js" type="text/javascript"></script>
+<script src="js/modernizr-custom.js" type="text/javascript"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/responsive-menu.js" type="text/javascript"></script>
+<script>
+	jQuery(function ($) {
+		var menu = $('.rm-nav').rMenu({
+			minWidth: '960px',
+		});
+	});
+</script>
+</head>
+<body>
+<header>
+<div class="wrapper">
+<div class="brand">
+	<p><a href="admin?action=toadminmain" class="logo">BookStore</a></p>
+</div>
+
+<div class="rm-container">
+	<a class="rm-toggle rm-button rm-nojs" href="#">Navigation</a>
+
+	<nav class="rm-nav rm-nojs rm-lighten">
+		<ul>
+			<li><a class="rm-ziti" href="admin?action=adminProfile">Dear,Admin</a>
+			<li><a href="admin?action=adminProfile">MyProfile</a>
+			<li><a href="admin?action=toAdminsearchitem">ItemSearch</a>
+			<li><a href="admin?action=toadministration">Administration</a>
+			<li><a href="admin?action=adminlogout">Logout</a>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+<script>$(function() { $('pre').addClass('prettyprint');})</script>
